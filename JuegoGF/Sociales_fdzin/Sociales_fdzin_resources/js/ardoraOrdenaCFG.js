@@ -1,0 +1,31 @@
+var timeAct=264; timeIni=264; timeBon=0;
+var successes=0; successesMax=5; attempts=0; attemptsMax=1;
+var score=0; scoreMax=5; scoreInc=1; scoreDec=1
+var typeGame=0;
+var tiTime=true;
+var tiTimeType=2;
+var tiButtonTime=true;
+var textButtonTime="Comenzar";
+var tiSuccesses=true;
+var tiAttempts=true;
+var tiScore=true;
+var startTime;
+var colorBack="#8000FF"; colorButton="#FF0000"; colorText="#FFFF00"; colorSele="#000000";
+var goURLNext=false; goURLRepeat=false;tiAval=false;
+var scoOk=0; scoWrong=0; scoOkDo=0; scoWrongDo=0; scoMessage=""; scoPtos=10;
+var fMenssage="Verdana, Geneva, sans-serif";
+var fActi="Verdana, Geneva, sans-serif";
+var fEnun="Verdana, Geneva, sans-serif";
+var timeOnMessage=5; messageOk="FELICIDADES!!!"; messageTime=""; messageError="INTENTA DE NUEVO!! "; messageErrorG="INTENTA DE NUEVO!! "; messageAttempts=""; isShowMessage=false;
+var urlOk=""; urlTime=""; urlError=""; urlAttempts="";
+var goURLOk="_blank"; goURLTime="_blank"; goURLAttempts="_blank"; goURLError="_blank"; 
+borderOk="#008000"; borderTime="#FF0000";borderError="#FF0000"; borderAttempts="#FF0000";
+var wordsGame="U29jaWFsZXNfZmR6aW4="; wordsStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+function giveZindex(typeElement){var valueZindex=0; capas=document.getElementsByTagName(typeElement);
+for (i=0;i<capas.length;i++){if (parseInt($(capas[i]).css("z-index"),10)>valueZindex){valueZindex=parseInt($(capas[i]).css("z-index"),10);}}return valueZindex;}
+var words=["RWwgbXVybyBmdWUgY3JlYWRvIGVuIDEsOTYx","RWwgTXVybyBkZSBCZXJsw61uIHNpbWJvbGl6YWJhIGxhIG9wcmVzacOzbiB5IGxhIGZhbHRhIGRlIGxpYmVydGFkZXM=","TGEgY2HDrWRhIGRlbCBNdXJvIGRlIEJlcmzDrW4gZWwgOSBkZSBub3ZpZW1icmUgZGUgMTk4OQ==","RWwgTXVybyBkZSBCZXJsw61uIHNlIGhhIGNvbnZlcnRpZG8gZW4gdW4gcG9kZXJvc28gc8OtbWJvbG8gZGUgcmVzaXN0ZW5jaWEgeSBlc3BlcmFuemE=","bG9zIGZyYWdtZW50b3MgcmVzdGFudGVzIGRlbCBNdXJvIGRlIEJlcmzDrW4gc29uIG1vbnVtZW50b3MgY29ubWVtb3JhdGl2b3M="];imaW=["berlin_1.jpeg","opresion.jpeg","caids.jpeg","6.jpeg","descarga__3_.jpg"];queW=["","","","",""];altW=["","","","",""];c=[27,66,53,84,73];
+var auW=["MQ==","Mg==","Mw==","NA==","NQ=="];
+var actMaxWidth="600"; actMaxHeight="300";indexG=0;profG=0;dirMedia="Sociales_fdzin_resources/media/"; textBNext="";
+var wordsG=[];imageW=[];questionW=[];audioW=[];cG=[];alterW=[];
+colorText="#FFFFFF";colorButton="#6699FF";colorBack="#3B3B3B";colorSele="#9BAFCB";goURLNext=true;
+fMenssage="Verdana, Geneva, sans-serif";fActi="Verdana, Geneva, sans-serif";fEnun="Verdana, Geneva, sans-serif";
