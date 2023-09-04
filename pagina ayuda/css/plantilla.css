@@ -31,6 +31,15 @@ nav a{
 nav a:hover{
     color: white;
 }
+footer{
+    display: flex;
+    min-height: 70px;
+    background-color: #C48DF2;
+    justify-content: space-between; /*  */
+    align-items: center;
+    padding: 10px;
+
+}
 
 @media (max-width:700px){  /* Esto es para cuando las pantalla se maxima a 700px */
     header{
