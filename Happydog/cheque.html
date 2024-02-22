@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/cheque.css">
+    <title>Creador de factura</title>
+</head>
+<body>
+    <!--la barra-->
+    <header>
+        <h1>Happy Puppies!</h1>
+        <nav>
+        <a href="#">Volver</a>
+
+        <a href="#">Usuario</a>
+       <img id="Avatar" src="imagen/Avatar.png" alt="Avatar">
+    </nav>
+
+    </header>
+
+    <br>
+    <!--Aqui esta el formulario para crear los cheques -->
+    
+    <main>
+
+        <div id="contenedor">
+        <form action="" method="post">
+            
+            <!--Aqui es para poner el dia, el mes y el año-->
+            <label for="">Fecha:</label>
+            <input type="date" name="fecha" id="fecha">
+            
+            <!--Aquie es para poner el  nombre del titular o usario del cheque-->
+            <label for="" class="nomb">Nombre de Usuario:</label>
+            <input type="text" name="nombre_usuario" id="nombre_usuario" placeholder="Ingrese nombre del Usuario">
+            
+
+            <!--Aqui es para poner la hora-->
+            <label for="" class="hora">hora:</label>
+            <input type="time" name="hora" id="hora"><br><br>
+
+
+            <!--Aqui se agregan los productos-->
+            <div id="pru_pre">
+                <label for="">Producto y precio</label> <br><br><br>
+                
+                <input type="text" class="prod" name="prod" placeholder="Ingresa el nombre del Producto">
+                
+                <input type="number" class="precio" step=".01" name="precio" placeholder="Ingrese el Precio">
+                <input type="button" value="Eliminar" id="elim" onclick="eliminar()">
+                <hr>
+            </div>
+            
+            <br><br>
+
+            <!--Aqui va el descuento y el total que pago-->
+            <label for="">descuento:</label>
+            <input type="number" name="descuento" id="descuento" placeholder="Descuento">
+            
+            <label for="">Total a pagar:</label>
+            <input type="number"  name="total" id="total" placeholder=" total a pagar"><br>
+            
+            <!--Boton de subir y enviar tambien borrar-->
+            <input type="submit" value="Guardar">
+            
+            <input type="reset" value="Borrar todo">
+            
+        </form>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

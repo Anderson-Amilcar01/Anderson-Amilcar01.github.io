@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+header{ 
+    background-color: #8a2be2;
+    color:  white;
+}
+
+header h1{
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 35pt;
+}
+
+header nav{
+    display: block;
+    float: right;
+   
+    }
+#Avatar{
+        height:  45px;
+        width:   45px;
+        display: inline-block;
+    }
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    margin:  10px 10px;
+}
+
+#titulo{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24pt;
+}
+
+section .producto{
+    background: #C3C3C3;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,.7); /*Esto es para que los boredes esten oscuritos*/
+    width: calc((100% - 90px) / 3);  /*Se le resta un poco de margen para que quede espacio entre las columnas*/
+    height:  500px;
+    margin: 15px;
+    float: left;
+    position: relative;
+    padding:  10px;
+    transform: translate(30%, 5px); /*para que no se vean los bordes superior e inferior del div*/
+
+}
+
+section .producto .servicios1{
+    background: cadetblue ;
+    border-radius: 5%;
+    margin:  auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 60%;
+    height:  40%;
+    text-align: center;
+}
+
+section .producto .servicios{
+    background: #5B2A86 ;
+    border-radius: 5%;
+    margin:  auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 60%;
+    height:  40%;
+    text-align: center;
+    
+}
+
+.conS{
+    text-decoration: none;
+    font-size: 15pt;
+    color: white;
+   
+}
