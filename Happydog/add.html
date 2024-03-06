@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="imagen/cheque.png">
+    <link rel="stylesheet" href="estilos/cheque.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto</title>
+</head>
+<body>
+    <header>
+        <h1>Happy Puppies</h1>
+        <nav class="menu">
+            <a href="#">Clientes</a>
+            <a href="#" id="agen">factura</a>
+            <a href="#">Productos</a>
+            <a href="#" id="marg">Cerrar sesion</a>
+        </nav>
+    </header>
+    
+    <h1>Agregar Producto</h1>
+    <main>
+        <section>
+        <table>
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>PD O SE</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <!--Aqui va el contenido del detalle de factura-->
+        <tbody id='contenido'>
+            <form action="">
+                <tr>
+                    <td><input type="number" min="0" step=".01" required></td>
+                    <td><input type="text"   required></td>
+                    <td><input type="number" min="0" step=".01" required></td>
+                    <td><input type="number" min="0" required></td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="submit" value="Guardar" id="save">
+        <input type="reset" value="Borrar todo"  id="borrartodo">
+        <a href="cheque.html" style="text-decoration: none; color: #fff;">Volver</a>
+            </form></section>
+    </main>
+    
+       
+</body>
