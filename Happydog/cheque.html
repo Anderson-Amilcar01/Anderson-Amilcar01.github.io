@@ -9,21 +9,19 @@
     <title>Crear factura</title>
 </head>
 <body>
-    <header>
-        <h1>Happy Puppies</h1>
-        <nav class="menu">
-            <a href="#">Clientes</a>
-            <a href="#" id="agen">factura</a>
-            <a href="#">Productos</a>
-            <a href="#" id="marg">Cerrar sesion</a>
-        </nav>
-    </header>
-    
-    <main>
-        <h1>Nueva Factura</h1>
 
-        <section>
-            <form action="" method="post">
+    <header>
+        <img src="imagen/Happy.png" alt="">
+        <div id="title">
+            <h1>Happy Puppies</h1>
+        </div>
+        <div id="usuario">
+            <h2><a href="usuario.html">Usuario</a></h2>
+        </div>
+    </header>
+            <form action="" method="post" >
+                <h1>Ingrese los datos:</h1>
+                <br>
                 <!--Aquie es para poner el  nombre del titular o usario del cheque-->
                 <label for="" class="nomb">Nombre de Usuario:</label>
                 <input type="text" name="nombre_usuario" id="nombre_usuario" required placeholder="Nombre del cliente">
@@ -39,42 +37,42 @@
                 <br>
 
                 <!--Aqui se agregan los productos-->
-                <input type="button" value="Add" id="Add">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Codigo</th>
-                            <th>PD O SE</th>
-                            <th>Precio</th>
-                            <th>Cantidad</th>
-                            <th>Acciones</th>
-                        </tr>
-                    </thead>
-                    <!--Aqui va el contenido del detalle de factura-->
-                    <tbody id='contenido'>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>
-                                <input type="button"  value="MODIFI" id="modifi" >
-                                <input type="button" value="DELETE" id="delete">
-                            </td>
-                            
-                        </tr>
-                    </tbody>
-                </table>
-                
+
                 <!--Boton de subir y enviar tambien borrar-->
                 <input type="submit" value="Guardar" id="save">
+                <button id="trw">Imprimir</button>
                 <input type="reset" value="Borrar todo"  id="borrartodo">
-
             </form>
 
-        </section>
+            <button id="Add" onclick="window.location.href='mofi.html'">ADD</button>
+            
+        <table id="tabla1">
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>PD O SE</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <!--Aqui va el contenido del detalle de factura-->
+        <tbody id="contenido">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
 
-    </main>
+                    <input type="button"  value="MODIFI" id="modifi" onclick="window.location.href='mofi.html'" >
+                    <input type="button" value="DELETE" id="delete">
+
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
 
 </body>
 </html>

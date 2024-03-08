@@ -10,19 +10,18 @@
 </head>
 <body>
     <header>
-        <h1>Happy Puppies</h1>
-        <nav class="menu">
-            <a href="#">Clientes</a>
-            <a href="#" id="agen">factura</a>
-            <a href="#">Productos</a>
-            <a href="#" id="marg">Cerrar sesion</a>
-        </nav>
+        <img src="imagen/Happy.png" alt="">
+        <div id="title">
+            <h1>modificar factura</h1>
+        </div>
+        <div id="usuario">
+            <h2><a href="usuario.html">Usuario</a></h2>
+        </div>
     </header>
 
-    
     <main>
-        <h1>modificar Factura</h1>
-        <section>
+        <h1>Ingrese los datos:</h1>
+            <br>
             <table>
                 <thead>
                     <tr>
@@ -33,8 +32,8 @@
                     </tr>
                 </thead>
                 <!--Aqui va el contenido del detalle de factura-->
-                <tbody id='contenido'>
-                    <form action="">
+                    <tbody id='contenido'>
+                     <form action="">
                         <tr>
                             <td><input type="number" min="0" step=".01" required></td>
                             <td><input type="text"   required></td>
@@ -43,11 +42,12 @@
                         </tr>
                     </tbody>
                 </table>
-                <input type="submit" value="Guardar" id="save">
-                        <input type="reset" value="Borrar todo"  id="borrartodo">
-                        <a href="cheque.html" style="text-decoration: none; color: #fff;">Volver</a>
-                    </form>
-        </section>
-    </main>
-        
-</body>
+                        <div id="botones">
+                            <input type="submit"class="bot" value="Guardar" id="save">
+                            <input type="reset" class="bot" value="Borrar todo"  id="borrartodo">
+                            <a href="cheque.html" class="bot" style="text-decoration: none; color: #fff;">Volver</a>
+                        </div>
+                        </form>
+      </main>     
+</body> 
+</html>

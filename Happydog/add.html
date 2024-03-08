@@ -9,18 +9,20 @@
 </head>
 <body>
     <header>
-        <h1>Happy Puppies</h1>
-        <nav class="menu">
-            <a href="#">Clientes</a>
-            <a href="#" id="agen">factura</a>
-            <a href="#">Productos</a>
-            <a href="#" id="marg">Cerrar sesion</a>
-        </nav>
+        <img src="imagen/Happy.png" alt="Logo">
+        <div id="title">
+            <h1>modificar factura</h1>
+        </div>
+        <div id="usuario">
+            <h2><a href="#">Back</a></h2>
+            <h2><a href="usuario.html">Usuario</a></h2>
+        </div>
     </header>
     
-    <h1>Agregar Producto</h1>
     <main>
+        <h1>Ingrese los datos</h1>
         <section>
+            <br>
         <table>
         <thead>
             <tr>
@@ -41,11 +43,13 @@
                 </tr>
             </tbody>
         </table>
-        <input type="submit" value="Guardar" id="save">
-        <input type="reset" value="Borrar todo"  id="borrartodo">
-        <a href="cheque.html" style="text-decoration: none; color: #fff;">Volver</a>
-            </form></section>
+            <div id="botones">
+                <input type="submit" value="Guardar" class="bot" id="save">
+            <input type="reset" value="Borrar todo" class="bot" id="borrartodo">
+            <a href="cheque.html" class="bot" style="text-decoration: none; color: #fff;">Volver</a>
+            </div>
+            </form>
+        </section>
     </main>
-    
-       
 </body>
+</html>
