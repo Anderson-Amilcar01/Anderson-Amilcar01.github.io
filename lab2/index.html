@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <script src="js/alum.js"></script>
+    
+    <title>formulario niño</title>
+</head>
+<body>
+    <article>
+        <br><br>
+    <div class="container">
+        <h2>Formulario para nuevos estudiantes</h2>
+    <form  action="" action="javascript:void(0);">
+        <!--Aqui es par el nombre-->
+        <label for="nombres">Nombres</label>
+        <input type="text"  name="nombres" id="nombres" min="3" placeholder="nombres" required><br>
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos" minlength="4" placeholder="Apellidos" min="3">
+        <label for="correo">Coreo electronico</label>
+        <input type="email" name="correo" id="correo"  placeholder="ejemplo@gmail.com">
+        <label for="experiencia">Nivel de experiencia de diseño web</label>
+        <select name="experiencia" id="experiencia">
+            <option value="1">1-Principiante</option>
+            <option value="2">2-Intermedio</option>
+            <option value="3">3-Avanzado</option>
+        </select><br>
+        <br>
+        <input type="submit" value="Enviar"><br>
+        <br>
+    </form>
+    <br><br><br><br>
+    </div>
+
+    </article>
+    <article>
+
+    <h2>Informacion:</h2>
+    <div id="infoni">
+
+    </div>
+
+    </article>
+</body>
+</html>
