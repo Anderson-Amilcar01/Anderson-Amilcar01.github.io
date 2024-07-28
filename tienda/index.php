@@ -14,22 +14,15 @@ $action = $_GET['action'] ?? 'index';
 // Estructura de control de flujo para determinar la acción a realizar
 switch ($action) {
     case 'crear':
-        // Si la solicitud es de tipo POST, se llama al método crear del controlador con los datos del formulario
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            //esto es para comprobar si hay una imagen y si no lo pone nulo
             if (isset($_FILES['img']) && $_FILES['img']['error'] === UPLOAD_ERR_OK) {
                 $img = $_FILES['img']['tmp_name'];
             } else {
-                $img = null; // Manejar el caso en que no se cargue una imagen
+                $img = null; 
             }
             
-            $control->crear(
-                $_POST['nombre'],
-                $_POST['codigo_barra'],
-                $img,
-                $_POST['cantidad'],
-                $_POST['precio'],
-                $_POST['categoria']
-            );
+            $control->crear($_POST['nombre'],$_POST['codigo_barra'],$img,$_POST['cantidad'],$_POST['precio'],$_POST['categoria']);
             header('Location: index.php');
             exit();
         } else {
